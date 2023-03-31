@@ -1,0 +1,39 @@
+{
+  "name": "edekee-react",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "Martin-Luther Obahor <kingm4159@gmail.com>",
+  "homepage": "https://github.com/edekeeteam/edekee-video-sdk#readme",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/types/index.d.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edekeeteam/edekee-video-sdk.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/edekee-react.test.js",
+    "build": "npm run tsc",
+    "tsc": "tsc -p ."
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "bugs": {
+    "url": "https://github.com/edekeeteam/edekee-video-sdk/issues"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.31",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.0.3"
+  }
+}
