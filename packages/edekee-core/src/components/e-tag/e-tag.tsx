@@ -1,4 +1,4 @@
-import { Component, h, Host, Prop, State } from "@stencil/core";
+import {Component, h, Host, Prop, State} from "@stencil/core";
 
 @Component({
   tag: "e-tag",
@@ -41,8 +41,8 @@ export class ETag {
     // const cancelSrc = getAssetPath(`./assets/${this.image}`);
 
     return (
-      <Host style={{ top: `${this.yPos}%`, left: `${this.xPos}%` }} onClick={() => this.menuToggle(true)}
-            class={{ "is-open": this.isOpen }}>
+      <Host style={{top: `${this.yPos}%`, left: `${this.xPos}%`}} onClick={() => this.menuToggle(true)}
+            class={{"is-open": this.isOpen}}>
         <div class={`tag-content ${this.isOpen ? "is-open" : ""}`}
              onClick={(e) => e.stopPropagation()}>
           <img onClick={(e) => {
@@ -81,52 +81,3 @@ export class ETag {
   }
 }
 
-// <div
-//   onClick={() => {
-//     setIsOpen(true);
-//   }}
-//   style={{
-//     top: `${topPos}%`,
-//     left: `${leftPos}%`,
-//   }}
-//   className={`tag ${isOpen ? "open" : ""}`}
-// >
-//   <div
-//     onClick={(e) => e.stopPropagation()}
-//     className={`tagContent ${showContent ? "open" : ""}`}
-//   >
-//     <img
-//       onClick={(e) => {
-//         e.stopPropagation();
-//         setIsOpen(false);
-//       }}
-//       className="cancelBtn"
-//       src="./Cancel.svg"
-//       alt="cancel"
-//     />
-//     <p className="headingText">Product Details</p>
-//     <div
-//       className="imageBox"
-//       style={{
-//         backgroundImage: `url(${image})`,
-//         backgroundPosition: "center",
-//         backgroundSize: "cover",
-//       }}
-//     ></div>
-//     <p className="productTitle">{title}</p>
-//     <div className="priceSection">
-//       <p className="priceText">
-//         $ {addCommasToNumber(Math.round(price / 450))}
-//       </p>
-//       <div
-//         onClick={(e) => {
-//           e.stopPropagation();
-//           setIsOpen(false);
-//         }}
-//         className="buyButton"
-//       >
-//         Buy
-//       </div>
-//     </div>
-//   </div>
-// </div>
