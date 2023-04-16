@@ -12,7 +12,7 @@
   "unpkg": "dist/edekee-core/edekee-core.esm.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ionic-team/stencil-component-starter.git"
+    "url": ""
   },
   "files": [
     "dist/",

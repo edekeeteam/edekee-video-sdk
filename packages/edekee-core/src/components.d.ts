@@ -29,6 +29,10 @@ export namespace Components {
          */
         "yPos": number | string;
     }
+    interface EWrapper {
+        "apikey": string;
+        "tags": [];
+    }
 }
 declare global {
     interface HTMLETagElement extends Components.ETag, HTMLStencilElement {
@@ -37,8 +41,15 @@ declare global {
         prototype: HTMLETagElement;
         new (): HTMLETagElement;
     };
+    interface HTMLEWrapperElement extends Components.EWrapper, HTMLStencilElement {
+    }
+    var HTMLEWrapperElement: {
+        prototype: HTMLEWrapperElement;
+        new (): HTMLEWrapperElement;
+    };
     interface HTMLElementTagNameMap {
         "e-tag": HTMLETagElement;
+        "e-wrapper": HTMLEWrapperElement;
     }
 }
 declare namespace LocalJSX {
@@ -65,8 +76,13 @@ declare namespace LocalJSX {
          */
         "yPos"?: number | string;
     }
+    interface EWrapper {
+        "apikey"?: string;
+        "tags"?: [];
+    }
     interface IntrinsicElements {
         "e-tag": ETag;
+        "e-wrapper": EWrapper;
     }
 }
 export { LocalJSX as JSX };
@@ -74,6 +90,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "e-tag": LocalJSX.ETag & JSXBase.HTMLAttributes<HTMLETagElement>;
+            "e-wrapper": LocalJSX.EWrapper & JSXBase.HTMLAttributes<HTMLEWrapperElement>;
         }
     }
 }

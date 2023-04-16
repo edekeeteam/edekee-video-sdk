@@ -15,10 +15,10 @@ export const config: Config = {
     {
       type: 'docs-readme',
     },
-    // {
-    //   type: 'www',
-    //   serviceWorker: null, // disable service workers
-    // },
+    {
+      type: 'www',
+      serviceWorker: null, // disable service workers
+    },
     reactOutputTarget({
       componentCorePackage: 'edekee-core',
       proxiesFile: '../edekee-react/lib/components.ts',

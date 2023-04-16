@@ -17,6 +17,19 @@
 | `yPos`     | `y-pos`     | * yPos is the coordinate of Vertical Axis             | `number \| string` | `undefined`    |
 
 
+## Dependencies
+
+### Used by
+
+ - [e-wrapper](../e-wrapper)
+
+### Graph
+```mermaid
+graph TD;
+  e-wrapper --> e-tag
+  style e-tag fill:#f9f,stroke:#333,stroke-width:4px
+```
+
 ----------------------------------------------
 
 *Built with [StencilJS](https://stenciljs.com/)*

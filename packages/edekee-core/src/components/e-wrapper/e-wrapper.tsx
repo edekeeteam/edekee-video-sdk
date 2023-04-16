@@ -1,4 +1,4 @@
-import {Component, h, Host, Prop, State, Event, Listen} from '@stencil/core';
+import {Component, h, Host, Prop, State} from '@stencil/core';
 
 @Component({
   tag: 'e-wrapper',
@@ -8,18 +8,24 @@ import {Component, h, Host, Prop, State, Event, Listen} from '@stencil/core';
 export class EWrapper {
 
   @State() isPaused: boolean = false;
+  @State() edekeeApi: string
+  @Prop() apikey: string
 
   @Prop() tags: []
 
-  @Event() toggleTags: EventEmitter;
-
-  @Listen('toggleTags')
-  toggleTagsListener(event: CustomEvent) {
-    console.log('Toggle Tags: ', event.detail);
-  }
+  // @Event() toggleTags: EventEmitter;
+  //
+  // @Listen('toggleTags')
+  // toggleTagsListener(event: CustomEvent) {
+  //   console.log('Toggle Tags: ', event.detail);
+  // }
 
   handlePause = () => {
     this.isPaused = true;
+  }
+
+  componentWillLoad() {
+
   }
 
   render() {
@@ -27,9 +33,7 @@ export class EWrapper {
       <Host onpause={this.handlePause}>
         <slot></slot>
         {
-          this.isPaused && this.tags.map((t) =>
-            <e-tag xPos={t.xPos}/>
-          )
+          this.isPaused && <e-tag xPos={40} yPos={70}/>
         }
       </Host>
     );
