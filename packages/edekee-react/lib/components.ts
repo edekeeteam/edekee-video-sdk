@@ -9,3 +9,4 @@ import { defineCustomElements } from 'edekee-core/loader';
 
 defineCustomElements();
 export const ETag = /*@__PURE__*/createReactComponent<JSX.ETag, HTMLETagElement>('e-tag');
+export const EWrapper = /*@__PURE__*/createReactComponent<JSX.EWrapper, HTMLEWrapperElement>('e-wrapper');

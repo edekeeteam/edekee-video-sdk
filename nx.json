@@ -1,0 +1,32 @@
+{
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "nx/tasks-runners/default",
+      "options": {
+        "cacheableOperations": [
+          "build",
+          "start"
+        ]
+      }
+    }
+  },
+  "targetDefaults": {
+    "build": {
+      "dependsOn": [
+        "^build"
+      ],
+      "outputs": [
+        "{projectRoot}/./edekee-core/dist"
+      ]
+    },
+    "start": {
+      "dependsOn": [
+        "^start"
+      ],
+      "outputs": [
+        "{projectRoot}/./edekee-core/dist ./edekee-react/dist"
+      ]
+    }
+  },
+  "defaultBase": "main"
+}
