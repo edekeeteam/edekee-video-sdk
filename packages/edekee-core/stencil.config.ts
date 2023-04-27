@@ -2,7 +2,7 @@ import { Config } from '@stencil/core';
 import { reactOutputTarget } from '@stencil/react-output-target';
 
 export const config: Config = {
-  namespace: 'edekee-core',
+  namespace: 'core',
   taskQueue: 'async',
   outputTargets: [
     {
@@ -14,10 +14,6 @@ export const config: Config = {
     },
     {
       type: 'docs-readme',
-    },
-    {
-      type: 'www',
-      serviceWorker: null, // disable service workers
     },
     reactOutputTarget({
       componentCorePackage: 'edekee-core',
