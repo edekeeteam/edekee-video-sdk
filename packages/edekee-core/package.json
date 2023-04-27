@@ -14,6 +14,11 @@
     "type": "git",
     "url": ""
   },
+  "private": false,
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "files": [
     "dist/",
     "loader/"
@@ -35,5 +40,6 @@
     "jest-cli": "^27.5.1",
     "puppeteer": "^19.5.2"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "gitHead": "2ffea91914b6679b32b6a6c269b9000d70fccf92"
 }
