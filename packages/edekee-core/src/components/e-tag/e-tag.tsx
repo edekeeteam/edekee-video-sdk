@@ -55,7 +55,7 @@ export class ETag {
           />
           <p class="heading-text">Product Details</p>
           <img
-            // src={}
+            src={this.imageUrl}
             class="image-box"
           ></img>
           <p class="product-itle">

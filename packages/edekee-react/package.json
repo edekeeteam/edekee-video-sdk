@@ -22,7 +22,9 @@
   "scripts": {
     "test": "node ./__tests__/edekee-react.test.js",
     "build": "npm run tsc",
-    "tsc": "tsc -p ."
+    "tsc": "tsc -p .",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "publishConfig": {
     "access": "public"
@@ -31,9 +33,21 @@
     "url": "https://github.com/edekeeteam/edekee-video-sdk/issues"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.21.4",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.21.4",
+    "@storybook/addon-essentials": "^7.0.7",
+    "@storybook/addon-interactions": "^7.0.7",
+    "@storybook/addon-links": "^7.0.7",
+    "@storybook/blocks": "^7.0.7",
+    "@storybook/react": "^7.0.7",
+    "@storybook/react-webpack5": "^7.0.7",
+    "@storybook/testing-library": "^0.0.14-next.2",
     "@types/react": "^18.0.31",
+    "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "storybook": "^7.0.7",
     "typescript": "^5.0.3"
   }
 }

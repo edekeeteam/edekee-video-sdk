@@ -7,10 +7,31 @@
 
 ## Properties
 
-| Property | Attribute | Description | Type     | Default     |
-| -------- | --------- | ----------- | -------- | ----------- |
-| `apikey` | `apikey`  |             | `string` | `undefined` |
-| `tags`   | --        |             | `[]`     | `undefined` |
+| Property      | Attribute | Description | Type          | Default     |
+| ------------- | --------- | ----------- | ------------- | ----------- |
+| `apikey`      | `apikey`  |             | `string`      | `undefined` |
+| `tags`        | --        |             | `string[]`    | `[]`        |
+| `videoPlayer` | --        |             | `HTMLElement` | `undefined` |
+
+
+## Events
+
+| Event      | Description | Type               |
+| ---------- | ----------- | ------------------ |
+| `showTags` |             | `CustomEvent<any>` |
+
+
+## Methods
+
+### `showTag(e: any) => Promise<void>`
+
+
+
+#### Returns
+
+Type: `Promise<void>`
+
+
 
 
 ## Dependencies

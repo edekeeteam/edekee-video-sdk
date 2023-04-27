@@ -30,9 +30,15 @@ export namespace Components {
         "yPos": number | string;
     }
     interface EWrapper {
-        "apikey": string;
-        "tags": [];
+        "apikey"?: string;
+        "showTag": (e: any) => Promise<void>;
+        "tags"?: string[];
+        "videoPlayer"?: HTMLElement;
     }
+}
+export interface EWrapperCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLEWrapperElement;
 }
 declare global {
     interface HTMLETagElement extends Components.ETag, HTMLStencilElement {
@@ -78,7 +84,9 @@ declare namespace LocalJSX {
     }
     interface EWrapper {
         "apikey"?: string;
-        "tags"?: [];
+        "onShowTags"?: (event: EWrapperCustomEvent<any>) => void;
+        "tags"?: string[];
+        "videoPlayer"?: HTMLElement;
     }
     interface IntrinsicElements {
         "e-tag": ETag;
