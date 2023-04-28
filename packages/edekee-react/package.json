@@ -35,7 +35,7 @@
     "url": "https://github.com/edekeeteam/edekee-video-sdk/issues"
   },
   "dependencies": {
-    "@edekee-sdk/core": "^0.0.4"
+    "@edekee-sdk/core": "0.0.4"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.21.4",
