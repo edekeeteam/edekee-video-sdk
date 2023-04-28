@@ -16,7 +16,7 @@ export const config: Config = {
       type: 'docs-readme',
     },
     reactOutputTarget({
-      componentCorePackage: 'edekee-core',
+      componentCorePackage: '@edekee-sdk/core',
       proxiesFile: '../edekee-react/lib/components.ts',
       includeDefineCustomElements: true,
     }),
