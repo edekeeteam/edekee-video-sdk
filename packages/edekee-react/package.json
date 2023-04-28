@@ -1,6 +1,6 @@
 {
   "name": "@edekee-sdk/react",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "> TODO: description",
   "author": "Martin-Luther Obahor <kingm4159@gmail.com>",
   "homepage": "https://github.com/edekeeteam/edekee-video-sdk#readme",
@@ -35,7 +35,7 @@
     "url": "https://github.com/edekeeteam/edekee-video-sdk/issues"
   },
   "dependencies": {
-    "@edekee-sdk/core": "^0.0.2"
+    "@edekee-sdk/core": "^0.0.3"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.21.4",
