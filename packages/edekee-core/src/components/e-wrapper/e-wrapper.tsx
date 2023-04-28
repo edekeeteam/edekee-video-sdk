@@ -12,14 +12,14 @@ export class EWrapper {
   // @Prop({mutable: true}) show?: boolean = false;
   @State() isPaused: boolean = false;
 
-  // @Listen('click', {capture: false})
-  // handleClick() {
-  //   // whenever a click event occurs on
-  //   // the component, update `isOpen`,
-  //   // triggering the rerender
-  //   this.isPaused = !this.isPaused;
-  //   this.showTags.emit();
-  // }
+  @Listen('click', {capture: false})
+  handleClick() {
+    // whenever a click event occurs on
+    // the component, update `isOpen`,
+    // triggering the rerender
+    this.isPaused = !this.isPaused;
+    this.showTags.emit();
+  }
 
   @Element() hostElement!: HTMLElement;
   @Prop({mutable: true}) videoPlayer?: HTMLElement;
