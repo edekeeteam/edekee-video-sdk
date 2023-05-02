@@ -1,6 +1,6 @@
 {
   "name": "@edekee-sdk/core",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Stencil Component Starter",
   "main": "dist/index.cjs.js",
   "module": "dist/index.js",
@@ -29,7 +29,7 @@
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll",
     "generate": "stencil generate",
-    "clean" : "rm -rf dist loader"
+    "clean": "rm -rf dist loader"
   },
   "dependencies": {
     "@stencil/core": "^3.0.0"
