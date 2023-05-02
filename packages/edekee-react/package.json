@@ -23,6 +23,7 @@
     "test": "node ./__tests__/edekee-react.test.js",
     "build": "npm run tsc",
     "tsc": "tsc -p .",
+    "clean" : "rm -rf dist",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
