@@ -3,7 +3,7 @@ import { reactOutputTarget } from '@stencil/react-output-target';
 
 export const config: Config = {
   namespace: 'core',
-  taskQueue: 'async',
+  // taskQueue: 'async',
   outputTargets: [
     {
       type: 'dist',
@@ -19,6 +19,7 @@ export const config: Config = {
       componentCorePackage: '@edekee-sdk/core',
       proxiesFile: '../edekee-react/lib/components.ts',
       includeDefineCustomElements: true,
+      // includeImportCustomElements: true
     }),
   ],
 };
