@@ -1,0 +1,147 @@
+0 silly argv {
+0 silly argv   _: [ 'publish' ],
+0 silly argv   composed: 'publish',
+0 silly argv   lernaVersion: '6.6.1',
+0 silly argv   '$0': '/Users/layefa/Projects/Edekee/edekee-video-sdk/node_modules/.bin/lerna'
+0 silly argv }
+1 notice cli v6.6.1
+2 verbose rootPath /Users/layefa/Projects/Edekee/edekee-video-sdk
+3 verbose session fdfe058966a9ec95
+4 verbose user-agent lerna/6.6.1/node@v18.15.0+arm64 (darwin)
+5 silly argv { _: [ 'publish' ], composed: 'publish', lernaVersion: '6.6.1' }
+6 verbose rootPath /Users/layefa/Projects/Edekee/edekee-video-sdk
+7 info current version 0.0.6
+8 silly isAnythingCommitted
+9 verbose isAnythingCommitted 1
+10 silly getCurrentBranch
+11 verbose currentBranch main
+12 silly remoteBranchExists
+13 silly isBehindUpstream
+14 silly isBehindUpstream main is behind origin/main by 0 commit(s) and ahead by 1
+15 silly hasTags
+16 verbose hasTags true
+17 silly git-describe.sync "v0.0.6-1-g3b1f65f" => {"lastTagName":"v0.0.6","lastVersion":"v0.0.6","refCount":"1","sha":"3b1f65f","isDirty":false}
+18 info Looking for changed packages since v0.0.6
+19 silly checking diff packages/edekee-core
+20 silly found diff in packages/edekee-core/package.json
+20 silly found diff in packages/edekee-core/stencil.config.ts
+21 verbose filtered diff [
+21 verbose filtered diff   'packages/edekee-core/package.json',
+21 verbose filtered diff   'packages/edekee-core/stencil.config.ts'
+21 verbose filtered diff ]
+22 silly checking diff packages/edekee-react
+23 silly found diff in packages/edekee-react/__tests__/edekee-react.test.js
+23 silly found diff in packages/edekee-react/package.json
+23 silly found diff in packages/edekee-react/stories/Button.stories.ts
+23 silly found diff in packages/edekee-react/stories/Button.tsx
+23 silly found diff in packages/edekee-react/stories/assets/code-brackets.svg
+23 silly found diff in packages/edekee-react/stories/assets/colors.svg
+23 silly found diff in packages/edekee-react/stories/assets/comments.svg
+23 silly found diff in packages/edekee-react/stories/assets/direction.svg
+23 silly found diff in packages/edekee-react/stories/assets/flow.svg
+23 silly found diff in packages/edekee-react/stories/assets/plugin.svg
+23 silly found diff in packages/edekee-react/stories/assets/repo.svg
+23 silly found diff in packages/edekee-react/stories/assets/stackalt.svg
+23 silly found diff in packages/edekee-react/stories/button.css
+23 silly found diff in packages/edekee-react/tsconfig.json
+24 verbose filtered diff [
+24 verbose filtered diff   'packages/edekee-react/__tests__/edekee-react.test.js',
+24 verbose filtered diff   'packages/edekee-react/package.json',
+24 verbose filtered diff   'packages/edekee-react/stories/Button.stories.ts',
+24 verbose filtered diff   'packages/edekee-react/stories/Button.tsx',
+24 verbose filtered diff   'packages/edekee-react/stories/assets/code-brackets.svg',
+24 verbose filtered diff   'packages/edekee-react/stories/assets/colors.svg',
+24 verbose filtered diff   'packages/edekee-react/stories/assets/comments.svg',
+24 verbose filtered diff   'packages/edekee-react/stories/assets/direction.svg',
+24 verbose filtered diff   'packages/edekee-react/stories/assets/flow.svg',
+24 verbose filtered diff   'packages/edekee-react/stories/assets/plugin.svg',
+24 verbose filtered diff   'packages/edekee-react/stories/assets/repo.svg',
+24 verbose filtered diff   'packages/edekee-react/stories/assets/stackalt.svg',
+24 verbose filtered diff   'packages/edekee-react/stories/button.css',
+24 verbose filtered diff   'packages/edekee-react/tsconfig.json'
+24 verbose filtered diff ]
+25 verbose updated @edekee-sdk/core
+26 verbose updated @edekee-sdk/react
+27 verbose git-describe undefined => "v0.0.6-1-g3b1f65f"
+28 silly git-describe parsed => {"lastTagName":"v0.0.6","lastVersion":"v0.0.6","refCount":"1","sha":"3b1f65f","isDirty":false}
+29 info execute Skipping releases
+30 silly lifecycle No script for "preversion" in "@edekee/root", continuing
+31 silly lifecycle No script for "preversion" in "@edekee-sdk/core", continuing
+32 verbose version @edekee-sdk/core has no lockfile. Skipping lockfile update.
+33 silly lifecycle No script for "version" in "@edekee-sdk/core", continuing
+34 silly lifecycle No script for "preversion" in "@edekee-sdk/react", continuing
+35 verbose version @edekee-sdk/react has no lockfile. Skipping lockfile update.
+36 silly lifecycle No script for "version" in "@edekee-sdk/react", continuing
+37 verbose version Updating root package-lock.json
+38 silly lifecycle No script for "version" in "@edekee/root", continuing
+39 silly gitAdd [
+39 silly gitAdd   'packages/edekee-core/package.json',
+39 silly gitAdd   'packages/edekee-react/package.json',
+39 silly gitAdd   'lerna.json',
+39 silly gitAdd   'package-lock.json'
+39 silly gitAdd ]
+40 silly gitCommit v0.0.7
+41 verbose git [ 'commit', '-m', 'v0.0.7' ]
+42 silly gitTag v0.0.7 git tag %s -m %s
+43 verbose git [ 'tag', 'v0.0.7', '-m', 'v0.0.7' ]
+44 silly lifecycle No script for "postversion" in "@edekee-sdk/core", continuing
+45 silly lifecycle No script for "postversion" in "@edekee-sdk/react", continuing
+46 silly lifecycle No script for "postversion" in "@edekee/root", continuing
+47 info git Pushing tags...
+48 silly gitPush origin main
+49 info publish Publishing packages to npm...
+50 warn ENOLICENSE Package @edekee-sdk/react is missing a license.
+50 warn ENOLICENSE One way to fix this is to add a LICENSE.md file to the root of this repository.
+50 warn ENOLICENSE See https://choosealicense.com for additional guidance.
+51 silly getCurrentSHA
+52 verbose getCurrentSHA f3f3f89c0e1f49ea577e1e1dc467988ab057ba49
+53 silly lifecycle No script for "prepublish" in "@edekee/root", continuing
+54 silly lifecycle No script for "prepare" in "@edekee/root", continuing
+55 silly lifecycle No script for "prepublishOnly" in "@edekee/root", continuing
+56 silly lifecycle No script for "prepack" in "@edekee/root", continuing
+57 verbose pack-directory packages/edekee-core
+58 silly lifecycle No script for "prepublish" in "@edekee-sdk/core", continuing
+59 silly lifecycle No script for "prepare" in "@edekee-sdk/core", continuing
+60 silly lifecycle No script for "prepublishOnly" in "@edekee-sdk/core", continuing
+61 silly lifecycle No script for "prepack" in "@edekee-sdk/core", continuing
+62 silly lifecycle No script for "postpack" in "@edekee-sdk/core", continuing
+63 verbose packed packages/edekee-core
+64 verbose pack-directory packages/edekee-react
+65 silly lifecycle No script for "prepublish" in "@edekee-sdk/react", continuing
+66 silly lifecycle No script for "prepare" in "@edekee-sdk/react", continuing
+67 silly lifecycle No script for "prepublishOnly" in "@edekee-sdk/react", continuing
+68 silly lifecycle No script for "prepack" in "@edekee-sdk/react", continuing
+69 silly lifecycle No script for "postpack" in "@edekee-sdk/react", continuing
+70 verbose packed packages/edekee-react
+71 silly lifecycle No script for "postpack" in "@edekee/root", continuing
+72 verbose publish @edekee-sdk/core
+73 silly FetchError: request to https://registry.npmjs.org/@edekee-sdk%2fcore failed, reason: getaddrinfo ENOTFOUND registry.npmjs.org
+73 silly     at ClientRequest.<anonymous> (/Users/layefa/Projects/Edekee/edekee-video-sdk/node_modules/minipass-fetch/lib/index.js:130:14)
+73 silly     at ClientRequest.emit (node:events:513:28)
+73 silly     at TLSSocket.socketErrorListener (node:_http_client:502:9)
+73 silly     at TLSSocket.emit (node:events:525:35)
+73 silly     at emitErrorNT (node:internal/streams/destroy:151:8)
+73 silly     at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+73 silly     at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+73 silly  FetchError: request to https://registry.npmjs.org/@edekee-sdk%2fcore failed, reason: getaddrinfo ENOTFOUND registry.npmjs.org
+73 silly     at ClientRequest.<anonymous> (/Users/layefa/Projects/Edekee/edekee-video-sdk/node_modules/minipass-fetch/lib/index.js:130:14)
+73 silly     at ClientRequest.emit (node:events:513:28)
+73 silly     at TLSSocket.socketErrorListener (node:_http_client:502:9)
+73 silly     at TLSSocket.emit (node:events:525:35)
+73 silly     at emitErrorNT (node:internal/streams/destroy:151:8)
+73 silly     at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+73 silly     at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+73 silly   code: 'ENOTFOUND',
+73 silly   errno: 'ENOTFOUND',
+73 silly   syscall: 'getaddrinfo',
+73 silly   hostname: 'registry.npmjs.org',
+73 silly   type: 'system'
+73 silly }
+74 error ENOTFOUND request to https://registry.npmjs.org/@edekee-sdk%2fcore failed, reason: getaddrinfo ENOTFOUND registry.npmjs.org
+75 error FetchError: request to https://registry.npmjs.org/@edekee-sdk%2fcore failed, reason: getaddrinfo ENOTFOUND registry.npmjs.org
+75 error     at ClientRequest.<anonymous> (/Users/layefa/Projects/Edekee/edekee-video-sdk/node_modules/minipass-fetch/lib/index.js:130:14)
+75 error     at ClientRequest.emit (node:events:513:28)
+75 error     at TLSSocket.socketErrorListener (node:_http_client:502:9)
+75 error     at TLSSocket.emit (node:events:525:35)
+75 error     at emitErrorNT (node:internal/streams/destroy:151:8)
+75 error     at emitErrorCloseNT (node:internal/streams/destroy:116:3)
