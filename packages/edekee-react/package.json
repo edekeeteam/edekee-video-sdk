@@ -5,11 +5,11 @@
   "author": "Martin-Luther Obahor <kingm4159@gmail.com>",
   "homepage": "https://github.com/edekeeteam/edekee-video-sdk#readme",
   "license": "ISC",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
-  "types": "dist/types/index.d.ts",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/types/index.d.ts",
   "files": [
-    "dist"
+    "dist/"
   ],
   "repository": {
     "type": "git",
